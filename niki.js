@@ -7,16 +7,18 @@ botonniki.onclick = desaparecerParrafoNiki
 
 // los paréntesis () indican que la función no necesita ningún argumento para funcionar.
 function desaparecerParrafoNiki(){
-    // cambio el color a azul y luego de 3 segundos
-    // lo cambio a negro
+    // desparezco el párrafo de nik y luegode 3 segundosi
+    // vuelve a aparecer
     botonniki.style.color = "purple";
     parrafoniki.style.display = "none"
     setTimeout(aparecerParrafoNiki, 3000);
+    console.log("Tercer botón clickeado")
 }
 function aparecerParrafoNiki(){
     // lo cambio a negro
     botonniki.style.color = "black";
     parrafoniki.style.display = "block"
+    console.log("Segunda función ejecutada")
 }
 
 botonniki.style.color = "black"
